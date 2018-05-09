@@ -42,7 +42,6 @@ class RiotAPIData:
             versions['live'] = \
                 self.watcher.static_data.versions(self.my_region)[0]
         except Exception as e:
-            # raise e #@
             if e.response.status_code == 401:
                 print("No API key was supplied. Get a new key from:",
                       "https://developer.riotgames.com")

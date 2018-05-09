@@ -205,9 +205,8 @@ class Scraper:
             # the same name as tag.name is not found in the func_dict.
             self.func_dict.get(tag.name, self.handle_default)(tag)
             if self.found_classic:
-                print("FOUND CLASSIC")
+                print("FOUNDCLASSIC")
                 return
-        return
 
     def write_dict_to_file(self, json_file):
         with open(json_file, 'r') as file:
@@ -215,7 +214,6 @@ class Scraper:
         dic.update(self.base_dict)
         with open(json_file, 'w') as file:
             json.dump(dic, file, indent=4)
-    # *******************************************************************************************
 
 
 class InputParser:
@@ -231,9 +229,7 @@ class InputParser:
     def page_exists(self, f_input):
         site = ('http://leagueoflegends.wikia.com/wiki/' +
                 f_input.replace(' ', '_') + '/Quotes')
-        # print(site)
         try:
-            # page = urllib.request.urlopen(site)
             urllib.request.urlopen(site)
             return True
         except urllib.error.HTTPError as e:
@@ -251,7 +247,6 @@ class InputParser:
                                   self.f_input)
             self.f_input = re.sub('[ ].', lambda p: p.group(0).upper(),
                                   self.f_input)
-        # print(self.f_input)
         return self.f_input
 
     # Create a list of champions whose first letter matches
@@ -379,12 +374,10 @@ def main_multi(ip):
         ip.input_ = input("  ")
         if ',' in ip.input_:
             if ip.f_input_list:
-                # print(ip.f_input_list)
                 break
             ip.f_input_list = ip.parse_multi()
             with suppress(TypeError):
                 ip.f_input_list = list(filter(None, ip.f_input_list))
-            # print(ip.f_input_list)
             break
         elif ip.input_ is 'c':
             break
