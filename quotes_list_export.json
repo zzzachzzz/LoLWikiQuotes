@@ -1,0 +1,52 @@
+{
+    "Annie": {
+        "champ_id": 1,
+        "quotes": {
+            "Champion Select": {
+                "Annie_Select": "\"You wanna play too? It'll be fun!\"",
+                "Annie.attack5": "\"I want a turn!\""
+            },
+            "Attacking": {
+                "Annie.attack1": "\"Take that!\"",
+                "Annie.attack2": "\"Don't make me hurt you!\"",
+                "Annie.attack3": "\"Eeny, meeny, miny, burn!\"",
+                "Annie.attack4": "\"Let's count to five!\"",
+                "Annie.attack5": "\"I want a turn!\"",
+                "Annie.attack6": "\"Play time!\"",
+                "Annie.attack7": "\"Can they do this?\"",
+                "Annie.attack8": "\"This is fun!\"",
+                "Annie.attack9": "\"Ashes, ashes, they all fall down.\""
+            },
+            "Movement": {
+                "Annie.move1": "\"Have you seen my bear Tibbers?\"",
+                "Annie.move2": "\"This way!\"",
+                "Annie.move3": "\"Try to keep up!\"",
+                "Annie.move4": "\"Are we there yet?\"",
+                "Annie.move5": "\"I never play with matches.\"",
+                "Annie.move6": "\"Don't be a scaredy cat!\"",
+                "Annie.move7": "\"Hop, skip, jump!\"",
+                "Annie.move8": "\"Come out, come out, wherever you are!\""
+            },
+            "Joke": {
+                "Annie.joke1": "\"You smell like burning!\"",
+                "Annie.joke2": "\"What's your favorite aminal? A bear?\""
+            },
+            "Taunt": {
+                "Annie.taunt1": "\"Beaten by a little girl... ha!\"",
+                "Annie.taunt2": "\"You can't come to Tibbers' tea party! Bleh!\"",
+                "Annie.taunt3": "\"I'm rubber and you're... on fire!\""
+            },
+            "Laugh": {},
+            "Upon Using  Summon Tibbers": {
+                "Annie.ultimate1": "\"Get 'em, Tibbers!\"",
+                "Annie.ultimate2": "\"Bear hug!\"",
+                "Annie.ultimate3": "\"Tibbers!\"",
+                "Annie.ultimate4": "\"Yay, Tibbers!\"",
+                "Annie.ultimate5": "\"Found him!\""
+            },
+            "Upon Death": {
+                "Annie.dying1": "\"Uh... *cough* Tibbers.\""
+            }
+        }
+    }
+}
