@@ -23,8 +23,8 @@ Quotes from all champions as of patch 8.9.1 are provided in the file [8.9.1_all_
 Downloading quotes from champions specified by input does NOT require a Riot API key.  
 A champion list [[name_id_dict.json](https://github.com/zzzachzzz/LoLWikiQuotes/blob/master/name_id_dict.json)] is required for downloading quotes from all champions using the (-a) flag, and for champion ID lookups (-i).  
 To update or replace the provided champion list [[name_id_dict.json](https://github.com/zzzachzzz/LoLWikiQuotes/blob/master/name_id_dict.json)], a valid Riot API key is required.  
-Get yours from developer.riotgames.com/.  
-In the file riot_api_key.json, replace "xxxxx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" with your own Riot API key, inside the quotation marks.
+Get yours from [developer.riotgames.com](https://developer.riotgames.com/).  
+In the file [riot_api_key.json](https://github.com/zzzachzzz/LoLWikiQuotes/blob/master/riot_api_key.json), replace "xxxxx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" with your own Riot API key, inside the quotation marks.
 
 # Credits
 
