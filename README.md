@@ -8,12 +8,12 @@ Quotes from all champions as of patch 8.9.1 are provided in the file [8.9.1_all_
 usage: wiki.py [-h] [-m] [-a] [-d] [-i] [-e]
 
 optional arguments:  
-  -h, --help&npsp; &npsp; show this help message and exit  
-  -m&npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; Download quotes for multiple champions.  
-  -a&npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; Download quotes for all champions.                        [Riot API key required]  
-  -d&npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; Download updated list of champions.                       [Riot API key required]  
-  -i&npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; Lookup champion ID, otherwise store 0 for champion ID.    [[name_id_dict.json required](https://github.com/zzzachzzz/LoLWikiQuotes/blob/master/name_id_dict.json)]  
-  -e&npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; &npsp; Print exceptions for error reporting.
+  -h, --help&nbsp; &nbsp; show this help message and exit  
+  -m&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Download quotes for multiple champions.  
+  -a&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Download quotes for all champions.                        [Riot API key required]  
+  -d&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Download updated list of champions.                       [Riot API key required]  
+  -i&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Lookup champion ID, otherwise store 0 for champion ID.    [[name_id_dict.json required](https://github.com/zzzachzzz/LoLWikiQuotes/blob/master/name_id_dict.json)]  
+  -e&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Print exceptions for error reporting.
 
 # Setup
 
