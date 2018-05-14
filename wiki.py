@@ -8,7 +8,7 @@ from difflib import SequenceMatcher
 from contextlib import suppress
 from collections import OrderedDict
 from bs4 import BeautifulSoup
-with suppress(ModuleNotFoundError):
+with suppress(ImportError):
     from RiotAPIData import RiotAPIData
 
 
@@ -205,7 +205,6 @@ class Scraper:
             # the same name as tag.name is not found in the func_dict.
             self.func_dict.get(tag.name, self.handle_default)(tag)
             if self.found_classic:
-                print("FOUNDCLASSIC")
                 return
 
     def write_dict_to_file(self, json_file):
@@ -410,7 +409,7 @@ def main_multi(ip):
 
 def main_all():
     with open('name_id_dict.json', 'r') as file:
-        name_id_dict = json.load(file)
+        name_id_dict = json.load(file, object_pairs_hook=OrderedDict)
     empty_dict('quotes_list_export.json')
     for champ in name_id_dict['data']:
         champion = name_id_dict['data'][champ]['name']

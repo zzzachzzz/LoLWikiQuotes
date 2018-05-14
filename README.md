@@ -18,7 +18,8 @@ Quotes from all champions as of patch 8.9.1 are provided in the file [8.9.1_all_
 
 # Setup
 
-*Required packages:* **bs4, riotwatcher**
+*Requires **Python 3***  
+*Required packages: **bs4, riotwatcher***
 
 Downloading quotes from champions specified by input does NOT require a Riot API key.  
 A champion list [[name_id_dict.json](https://github.com/zzzachzzz/LoLWikiQuotes/blob/master/name_id_dict.json)] is required for downloading quotes from all champions using the (-a) flag, and for champion ID lookups (-i).  
