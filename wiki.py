@@ -157,8 +157,7 @@ class Scraper:
             self.prev_valid_quote_id = self.quote_id
 
             quote = re.search(r'(?=\").*(?<=\")', tag.text)
-            #                    Champions who only make noises
-            if self.champion in {'Bard', 'Rek\'Sai'}:
+            if self.champion in {'Bard', 'Rek\'Sai'}:  # Champions who only make noises
                 quote = re.search(r'.*', tag.text)
             if quote:
                 quote = quote.group(0)
@@ -356,6 +355,9 @@ def main_one(ip):
         scrape = Scraper(args, ip.champion, champ_id)
         scrape.get_content_tags()
         scrape.populate_dictionary()
+        # If a skin selector tab is found, content_tags is switched to the
+        # Classic / Live / (Champion Name) tag, found_classic is set to True,
+        # and populate_dictionary() is called again to scrape within that tag.
         if scrape.found_classic:
             scrape.populate_dictionary()
         # Empty out quotes_list_export.json, replace with an empty
@@ -402,6 +404,9 @@ def main_multi(ip):
             scrape = Scraper(args, champ, champ_id)
             scrape.get_content_tags()
             scrape.populate_dictionary()
+            # If a skin selector tab is found, content_tags is switched to the
+            # Classic / Live / (Champion Name) tag, found_classic is set to True,
+            # and populate_dictionary() is called again to scrape within that tag.
             if scrape.found_classic:
                 scrape.populate_dictionary()
             scrape.write_dict_to_file('quotes_list_export.json')
@@ -418,8 +423,9 @@ def main_all():
         scrape = Scraper(args, champion, champ_id)
         scrape.get_content_tags()
         scrape.populate_dictionary()
-        # If skin selector tab is found, switch content tags
-        # to that of the classic tab and scrape quotes from there.
+        # If a skin selector tab is found, content_tags is switched to the
+        # Classic / Live / (Champion Name) tag, found_classic is set to True,
+        # and populate_dictionary() is called again to scrape within that tag.
         if scrape.found_classic:
             scrape.populate_dictionary()
         scrape.write_dict_to_file('quotes_list_export.json')
